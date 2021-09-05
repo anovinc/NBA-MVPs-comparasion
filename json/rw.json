@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Name": "PTS",
+        "value": 31.6,
+        "desc":"Points per game"
+    },
+    {
+        "Name":"REB",
+        "value": 10.7,
+        "desc":"Rebounds per game"
+
+    },
+    {
+        "Name":"AST",
+        "value":10.4
+
+    },
+    {
+        "Name":"BLK",
+        "value":0.4
+
+    },
+    {
+        "Name": "STL",
+        "value": 1.6
+    },
+    {
+        "Name": "TOV",
+        "value": 5.4
+    }
+    
+]

@@ -1,0 +1,168 @@
+
+.selection {
+    width: 60%;
+    margin: auto;
+    height: 200px;
+ 
+}
+.dropdown {
+    width: 210px;
+}
+.dropBtn {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    border: none;
+    background: none;
+    font-style: italic;
+}
+
+.dropdown-content-first {
+    display: none;
+}
+
+.dropdown-content-second {
+    display: none;
+}
+
+.dropdown-content-show {
+    display: block;
+    overflow-y: scroll;
+    height: 180px;
+}
+
+.option {
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.dropdown.First {
+    float: left;
+}
+.choice {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dropdown.Second {
+    float: right;
+}
+
+.comparision {
+    height: fit-content;
+}
+
+.firstChoice, .imageDivOne {
+    float: left;
+    clear: both;
+}
+
+.firstChoice, .secondChoice {
+    font-size: 34px;
+    font-family: Roboto;
+    width: 350px;
+    align-content: center;
+    text-align: center;
+    color: #1A477B;
+    font-weight: bold;
+}
+.secondChoice, .imageDivTwo {
+    float: right;
+    clear: both;
+    color: #E6BC06;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+}
+
+.versus {
+    width: 100px;
+    height: 250px;
+    position: relative;
+}
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.versus img {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    height: 100px;
+}
+
+.bar{
+    width: 85%;
+    margin: auto;
+}
+.statsOne {
+    float: left;
+    display: none;
+}
+
+.statsTwo{
+    float: right;
+    display: none;
+
+}
+.pieOne,.pieTwo,.pieThree,.pieFour,.pieFive,.pieSix{
+    display: none;
+}
+.pieOne,.pieTwo,.pieThree{
+    float: left;
+}
+.pieFour,.pieFive,.pieSix {
+    float: right;
+}
+.statsOne-show,.statsTwo-show {
+    display: inline-block;
+}
+
+.axis {
+    font-size: 18px;
+ 
+}
+
+.value_text {
+    font-size: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.charts {
+    display: grid;
+}
+.pieChart {
+    width: 85%;
+}
+
+.firstPieChart {
+    margin: auto;
+    float: left;
+}
+
+
+.secondPieChart {
+    margin: auto;
+    float: right;
+}
+
+.pieChartTxt {
+    font-size: 24px ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mouseout-txt {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px ;
+    font-weight: bolder;
+
+
+
+}

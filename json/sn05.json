@@ -1,0 +1,30 @@
+ [
+        {
+            "Name": "PTS",
+            "value": 15.5
+        },
+        {
+            "Name":"REB",
+            "value": 3.3
+
+        },
+        {
+            "Name":"AST",
+            "value":11.5
+
+        },
+        {
+            "Name":"BLK",
+            "value":0.1
+
+        },
+        {
+            "Name": "STL",
+            "value": 1
+        },
+        {
+            "Name": "TOV",
+            "value": 3.3
+        }
+        
+ ]

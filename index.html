@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NBA MVP Comparison</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src = "https://d3js.org/d3.v4.min.js"></script>
+        <script type="text/javascript" src="mvps.json"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <!--Selection-->
+        <section class="selection">
+            <div class="dropdown First">
+                <button class="dropBtn First">Select your option</button>
+                <div class="dropdown-content-first">
+                    <input type="button" class="option RW" value="Russell Westbrook (2017.)">
+                    <input type="button" class="option GA" value="Giannis Antetokounmpo (2020.)">
+                    <input type="button" class="option GA19" value="Giannis Antetokounmpo (2019.)">
+                    <input type="button" class="option JH" value="James Harden (2018.)">
+                    <input type="button" class="option SC16" value="Stephen Curry (2016.)">
+                    <input type="button" class="option SC15" value="Stephen Curry (2015.)">
+                    <input type="button" class="option KD" value="Kevin Durrant (2014.)">
+                    <input type="button" class="option LJ13" value="LeBron James (2013.)">
+                    <input type="button" class="option LJ12"value="LeBron James (2012.)">
+                    <input type="button" class="option DR"value="Derrick Rose (2011.)">
+                    <input type="button" class="option LJ10"value="LeBron James (2010.)">
+                    <input type="button" class="option LJ09"value="LeBron James (2009.)">
+                    <input type="button" class="option KB"value="Kobe Bryant (2008.)">
+                    <input type="button" class="option DK09"value="Dirk Nowitzki (2007.)">
+                    <input type="button" class="option SN06"value="Steve Nash (2006.)">
+                    <input type="button" class="option SN05"value="Steve Nash (2005.)">
+                    <input type="button" class="option TD02"value="Tim Duncan (2002.)">
+                    <input type="button" class="option TD03"value="Tim Duncan (2003.)">
+                    <input type="button" class="option KG"value="Kevin Garnett (2004.)">
+                    <input type="button" class="option AI"value="Allen Iverson (2001.)">
+                    <input type="button" class="option SN"value="Shaquille O'Neal (2000.)">
+                    <input type="button" class="option MJ88"value="Michael Jordan (1988.)">
+                    <input type="button" class="option MJ91"value="Michael Jordan (1991.)">
+                    <input type="button" class="option MJ92"value="Michael Jordan (1992.)">
+                    <input type="button" class="option MJ96"value="Michael Jordan (1996.)">
+                    <input type="button" class="option MJ98"value="Michael Jordan (1998.)">
+                    <input type="button" class="option HO"value="Hakeem Olajuwon (1994.)">
+                    <input type="button" class="option MJ"value="Magic Johnson (1987.)">
+                    <input type="button" class="option KM"value="Karl Malone (1997.)">
+                    <input type="button" class="option CH"value="Charles Barkley (1993.)">
+                    <input type="button" class="option DR95"value="David Robinson (1995.)">
+                </div>
+            </div>
+
+            <div class="dropdown Second">
+                <button class="dropBtn Second">Select your option</button>
+                <div class="dropdown-content-second">
+                    <input type="button" class="option RW2" value="Russell Westbrook (2017.)">
+                    <input type="button" class="option GA2" value="Giannis Antetokounmpo (2020.)">
+                    <input type="button" class="option GA192" value="Giannis Antetokounmpo (2019.)">
+                    <input type="button" class="option JH2" value="James Harden (2018.)">
+                    <input type="button" class="option SC162" value="Stephen Curry (2016.)">
+                    <input type="button" class="option SC152" value="Stephen Curry (2015.)">
+                    <input type="button" class="option KD2" value="Kevin Durrant (2014.)">
+                    <input type="button" class="option LJ132" value="LeBron James (2013.)">
+                    <input type="button" class="option LJ122"value="LeBron James (2012.)">
+                    <input type="button" class="option DR2"value="Derrick Rose (2011.)">
+                    <input type="button" class="option LJ102"value="LeBron James (2010.)">
+                    <input type="button" class="option LJ092"value="LeBron James (2009.)">
+                    <input type="button" class="option KB082"value="Kobe Bryant (2008.)">
+                    <input type="button" class="option DK2"value="Dirk Nowitzki (2007.)">
+                    <input type="button" class="option SN062"value="Steve Nash (2006.)">
+                    <input type="button" class="option SN052"value="Steve Nash (2005.)">
+                    <input type="button" class="option TD022"value="Tim Duncan (2002.)">
+                    <input type="button" class="option TD032"value="Tim Duncan (2003.)">
+                    <input type="button" class="option KG2"value="Kevin Garnett (2004.)">
+                    <input type="button" class="option AI2"value="Allen Iverson (2001.)">
+                    <input type="button" class="option SN2"value="Shaquille O'Neal (2000.)">
+                    <input type="button" class="option MJ882"value="Michael Jordan (1988.)">
+                    <input type="button" class="option MJ912"value="Michael Jordan (1991.)">
+                    <input type="button" class="option MJ922"value="Michael Jordan (1992.)">
+                    <input type="button" class="option MJ962"value="Michael Jordan (1996.)">
+                    <input type="button" class="option MJ982"value="Michael Jordan (1998.)">
+                    <input type="button" class="option HO2"value="Hakeem Olajuwon (1994.)">
+                    <input type="button" class="option MJ2"value="Magic Johnson (1987.)">
+                    <input type="button" class="option KM2"value="Karl Malone (1997.)">
+                    <input type="button" class="option CH2"value="Charles Barkley (1993.)">
+                    <input type="button" class="option DR952"value="David Robinson (1995.)">
+                </div>
+            </div>
+        </section>
+        <section class="comparision">
+            <div class="choice">
+               <div class="">
+                <div class="imageDivOne">
+                </div>
+                <p class="firstChoice"></p>
+               </div> 
+               <div class="versus"></div>
+              <div class="">
+                <div class="imageDivTwo">
+                </div>
+                <p class="secondChoice"></p>
+              </div>
+            </div>
+        </section>
+
+    <section class="charts">
+        <section class="bar">
+            <div class="statsOne"></div>
+            <div class="statsTwo"></div>
+        </section>
+
+        <section class="pieChart">
+            <div class="firstPieChart">
+                <div class="pieOne"></div>
+                <div class="pieTwo"></div>
+                <div class="pieThree"></div>
+            </div>
+            <div class="secondPieChart">
+                
+                <div class="pieFour"></div>
+                <div class="pieFive"></div>
+                <div class="pieSix"></div>
+            </div>
+           
+        </section>
+    </section>
+    
+        
+    </body>
+    <script src="app.js"></script>
+    <script src="display.js"></script>
+    <script src="barChart.js"></script>
+
+</html>
